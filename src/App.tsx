@@ -747,7 +747,7 @@ export default function App() {
                   <div>
                     <div className="text-blue-300 font-bold text-sm mb-1">교육방식</div>
                     <div className="text-xl font-bold">100% 오프라인</div>
-                  </div>formspree
+                  </div>
                 </div>
               </div>
 
