@@ -333,6 +333,24 @@ export default function App() {
             </div>
           </div>
         </FadeIn>
+
+        {/* Apply Now Button for Overview */}
+        <FadeIn delay={0.2} className="mt-12 flex justify-center">
+          <motion.button 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            animate={{ 
+              boxShadow: ["0px 0px 0px rgba(37, 99, 235, 0)", "0px 0px 20px rgba(37, 99, 235, 0.4)", "0px 0px 0px rgba(37, 99, 235, 0)"] 
+            }}
+            transition={{ 
+              boxShadow: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+            }}
+            onClick={() => scrollTo('contact-form')}
+            className="bg-blue-600 text-white hover:bg-blue-700 px-10 py-5 rounded-full font-black text-xl transition-all shadow-xl flex items-center justify-center gap-3"
+          >
+            지금 바로 지원하기 <ArrowRight size={24} />
+          </motion.button>
+        </FadeIn>
       </section>
 
       {/* Target Audience */}
@@ -521,6 +539,24 @@ export default function App() {
               </div>
             </div>
           </div>
+
+          {/* Apply Now Button for Roadmap */}
+          <div className="mt-16 flex justify-center">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              animate={{ 
+                boxShadow: ["0px 0px 0px rgba(37, 99, 235, 0)", "0px 0px 20px rgba(37, 99, 235, 0.4)", "0px 0px 0px rgba(37, 99, 235, 0)"] 
+              }}
+              transition={{ 
+                boxShadow: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+              }}
+              onClick={() => scrollTo('contact-form')}
+              className="bg-blue-600 text-white hover:bg-blue-700 px-10 py-5 rounded-full font-black text-xl transition-all shadow-xl flex items-center justify-center gap-3"
+            >
+              지금 바로 지원하기 <ArrowRight size={24} />
+            </motion.button>
+          </div>
         </FadeIn>
       </section>
 
@@ -610,6 +646,24 @@ export default function App() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Apply Now Button for Instructors */}
+          <div className="mt-16 flex justify-center">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              animate={{ 
+                boxShadow: ["0px 0px 0px rgba(37, 99, 235, 0)", "0px 0px 20px rgba(37, 99, 235, 0.4)", "0px 0px 0px rgba(37, 99, 235, 0)"] 
+              }}
+              transition={{ 
+                boxShadow: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+              }}
+              onClick={() => scrollTo('contact-form')}
+              className="bg-blue-600 text-white hover:bg-blue-700 px-10 py-5 rounded-full font-black text-xl transition-all shadow-xl flex items-center justify-center gap-3"
+            >
+              지금 바로 지원하기 <ArrowRight size={24} />
+            </motion.button>
           </div>
         </FadeIn>
       </section>
@@ -821,12 +875,11 @@ export default function App() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-bold text-slate-700 mb-1 md:mb-1.5">문의내용</label>
+                  <label htmlFor="message" className="block text-sm font-bold text-slate-700 mb-1 md:mb-1.5">문의내용 (선택)</label>
                   <textarea 
                     id="message" 
                     name="message" 
                     rows={2} 
-                    required
                     className="w-full px-4 py-2 md:py-2.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all bg-slate-50 focus:bg-white resize-none"
                     placeholder="궁금하신 내용을 상세히 적어주세요."
                   ></textarea>
