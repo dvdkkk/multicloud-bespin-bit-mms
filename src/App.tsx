@@ -879,6 +879,26 @@ export default function App() {
                 <form action="https://inputhaven.com/api/v1/submit" method="POST" onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
                   <input type="hidden" name="_form_id" value="ca2310b9e38c197dfb7ef162b557d80a" />
                   <input type="hidden" name="_subject" value="베스핀글로벌 부트캠프 상담 신청" />
+                  <input type="hidden" name="course" value="베스핀글로벌-멀티클라우드엔지니어" />
+
+                  {/* 과정명 필드 (노출 및 기본값 설정) */}
+                  <div>
+                    <label htmlFor="course_display" className="block text-sm font-bold text-slate-700 mb-1 md:mb-1.5">과정명</label>
+                    <div className="relative">
+                      <input 
+                        type="text" 
+                        id="course_display" 
+                        name="과정명" 
+                        defaultValue="베스핀글로벌-멀티클라우드엔지니어" 
+                        readOnly
+                        className="w-full px-4 py-2 md:py-2.5 rounded-xl border border-blue-200 bg-blue-50/60 font-bold text-blue-950 outline-none transition-all cursor-default pr-20 select-all"
+                      />
+                      <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold px-2.5 py-0.5 rounded-md bg-blue-100 text-blue-700">
+                        기본과정
+                      </span>
+                    </div>
+                  </div>
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     <div>
                       <label htmlFor="name" className="block text-sm font-bold text-slate-700 mb-1 md:mb-1.5">이름</label>
